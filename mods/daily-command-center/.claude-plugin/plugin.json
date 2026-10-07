@@ -1,0 +1,44 @@
+{
+  "name": "daily-command-center",
+  "version": "1.0.0",
+  "description": "Every morning Claude asks for the three tasks you need to do today, then pins them in a side pane next to your revenue and key numbers.",
+  "author": {
+    "name": "Marc Cleroux",
+    "url": "https://www.instagram.com/tenfoldmarc"
+  },
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "start_hour": {
+      "type": "number",
+      "title": "Start hour",
+      "description": "The hour (0 to 23, your local time) from which Claude asks for your three tasks. 9 is 9am.",
+      "default": 9
+    },
+    "stripe_key": {
+      "type": "string",
+      "title": "Stripe key",
+      "description": "Optional. A Stripe restricted key with read access to Balance, to show revenue today and month to date. Leave empty for no Stripe.",
+      "sensitive": true,
+      "default": ""
+    },
+    "metrics_command": {
+      "type": "string",
+      "title": "Metrics command",
+      "description": "Optional. A shell command that prints one 'Label: value' line per number to show. Leave empty for none.",
+      "default": ""
+    },
+    "refresh_minutes": {
+      "type": "number",
+      "title": "Refresh minutes",
+      "description": "How often the numbers refresh.",
+      "default": 5
+    },
+    "volume": {
+      "type": "number",
+      "title": "Volume",
+      "description": "Check-off sound volume, from 0 (silent) to 4 (loud). 1 is normal.",
+      "default": 1
+    }
+  }
+}

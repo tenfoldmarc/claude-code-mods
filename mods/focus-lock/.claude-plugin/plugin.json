@@ -1,0 +1,31 @@
+{
+  "name": "focus-lock",
+  "version": "1.0.0",
+  "description": "Start a timed sprint on one task with /sprint. Prompts about anything else are held until the timer ends.",
+  "author": {
+    "name": "Marc Cleroux",
+    "url": "https://www.instagram.com/tenfoldmarc"
+  },
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "minutes": {
+      "type": "number",
+      "title": "Sprint length",
+      "description": "Minutes a sprint runs when /sprint is given no number.",
+      "default": 50
+    },
+    "model": {
+      "type": "string",
+      "title": "Judge model",
+      "description": "The model that decides whether a prompt is on task. A small, fast one is best.",
+      "default": "haiku"
+    },
+    "volume": {
+      "type": "number",
+      "title": "Volume",
+      "description": "End-of-sprint sound volume, from 0 (silent) to 4 (loud). 1 is normal.",
+      "default": 1
+    }
+  }
+}

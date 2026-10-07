@@ -1,0 +1,24 @@
+{
+  "name": "done-chime",
+  "version": "1.0.0",
+  "description": "Plays a chime and shows a toast when Claude finishes a long job, so you can walk away from the screen.",
+  "author": {
+    "name": "Marc Cleroux",
+    "url": "https://www.instagram.com/tenfoldmarc"
+  },
+  "license": "MIT",
+  "userConfig": {
+    "min_seconds": {
+      "type": "number",
+      "title": "Minimum seconds",
+      "description": "Only chime when a job ran at least this many seconds.",
+      "default": 20
+    },
+    "volume": {
+      "type": "number",
+      "title": "Volume",
+      "description": "Chime volume, from 0 (silent) to 4 (loud). 1 is normal.",
+      "default": 1
+    }
+  }
+}

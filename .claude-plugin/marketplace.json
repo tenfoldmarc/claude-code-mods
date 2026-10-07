@@ -1,0 +1,28 @@
+{
+  "name": "tenfold-mods",
+  "owner": {
+    "name": "Marc Cleroux",
+    "url": "https://www.instagram.com/tenfoldmarc"
+  },
+  "metadata": {
+    "description": "Three Claude Code mods that run your workday: a daily command center, a focus lock, and a done chime.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "daily-command-center",
+      "source": "./mods/daily-command-center",
+      "description": "Every morning Claude asks for the three tasks you need to do today, then pins them in a side pane next to your revenue and key numbers."
+    },
+    {
+      "name": "focus-lock",
+      "source": "./mods/focus-lock",
+      "description": "Start a timed sprint on one task with /sprint. Prompts about anything else are held until the timer ends."
+    },
+    {
+      "name": "done-chime",
+      "source": "./mods/done-chime",
+      "description": "Plays a chime and shows a toast when Claude finishes a long job, so you can walk away from the screen."
+    }
+  ]
+}
